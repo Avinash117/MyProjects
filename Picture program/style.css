@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+
+#my_header {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 19px;
+  color: white;
+  border-style: solid none solid none;
+  border-width: 2px;
+  margin: 0 auto;
+  width: 360px;
+  padding: 10px;
+}
+
+#my_subheader{
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 14px;
+	color: white;
+  margin: 0 auto;
+  width: 360px;
+  padding: 10px;
+  margin-bottom: 250px;
+}
+
+body{
+  background: url("https://images.wallpaperscraft.com/image/stars_milky_way_space_116893_3840x2160.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.filter_button{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 17px;
+  border-style: solid none solid none;
+  border-width: 2px;
+	color: white;
+	padding: 10px 30px 10px 30px;
+  margin-right: 20px;
+}
+
+
+.grid_container{
+	display: grid;
+	margin: 20px 8px 20px 8px;
+	grid-column-gap: 30px;	
+	grid-row-gap: 30px;
+	grid-template-columns: 1fr 1fr 1fr;
+	
+}
+
+@media only screen and (max-width: 600px) {
+	.grid_container{
+	  grid-template-columns: 1fr;
+	}  
+}
+
+.grid_image{
+   border: solid white 1px;
+	/* these set sizing*/
+	width: 100%;
+	max-height: 300px;
+	object-fit: cover;  	
+}
